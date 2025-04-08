@@ -1,0 +1,6 @@
+@PLanguageQuizGame_HostAddress = http://localhost:5100
+
+GET {{PLanguageQuizGame_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
