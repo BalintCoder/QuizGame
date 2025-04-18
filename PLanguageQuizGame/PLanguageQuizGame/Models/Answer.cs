@@ -8,6 +8,6 @@ public class Answer
     
     public bool IsCorrect { get; set; }
 
-    public int QuestionId { get; set; }
+    public Guid QuestionId { get; set; } = Guid.NewGuid();
     public Question Question { get; set; } = null!;
 }
