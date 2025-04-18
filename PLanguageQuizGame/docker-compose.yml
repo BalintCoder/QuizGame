@@ -1,0 +1,22 @@
+services:
+  planguagequizgame-db:
+    image: mysql:8.0
+    container_name: planguagequizgame-db
+    environment:
+      MYSQL_ROOT_PASSWORD: "P@assword2025"
+      MYSQL_DATABASE: quizgamedb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: firstpassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - quiz-network
+
+volumes:
+  mysql-data:
+
+networks:
+  quiz-network:
+    driver: bridge
