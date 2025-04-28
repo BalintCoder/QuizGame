@@ -4,7 +4,7 @@ public class Question
 {
     public Guid Id { get; set; } = Guid.NewGuid();
 
-    public string text { get; set; } = null!;
+    public string Text { get; set; } = null!;
     
     public Guid LanguageId { get; set; } = Guid.NewGuid();
 
